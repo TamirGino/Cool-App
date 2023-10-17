@@ -1,0 +1,18 @@
+.card {
+    background: lightblue;
+    border-radius:.5rem;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow:4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );	
+    border-width:.25rem;
+    text-align: center;
+    flex: 0;
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.1); 
+    }

@@ -1,0 +1,22 @@
+.flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+@media only screen and (max-width: 1200px) {
+  .flex-gap {
+    /* align-items: center; */
+    justify-content: center;
+  }
+}
+
+
+.text-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+.container{
+    border: 0px solid black;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-grow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header{
+    flex-grow: 1;       
+    text-align:center;
+}

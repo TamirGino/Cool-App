@@ -1,17 +1,12 @@
 import React from "react";
 import { Button, Typography } from '@mui/material';
 import styles from '../../styles/header.module.css'
-import dataContext, { DataProvider } from '../../DataProvider'
-
-
+import dataContext from '../../DataProvider'
 
 const Header = (props) => {
 
-    // const [count, setData] = React.useContext(dataContext)
-
- const { count, cardsId } = React.useContext(dataContext);
+ const { count } = React.useContext(dataContext);
  const [countValue, setCountValue] = count;
- const [cardsIdValue, setCardsIdValue] = cardsId;
 
  const handleClick = () => {
         props.triggerRestart();
@@ -20,27 +15,24 @@ const Header = (props) => {
     return (
         <>
         <div className={styles.container}>
-            <div className={styles.movements}>
-                <Typography variant="h6" align='center' >
-                    Movements: {countValue}
+            <div>
+                <Typography variant="h6" align='center' fontFamily={"Tilt Neon"}  >
+                    Movements: <Typography variant="h4" align='center' fontFamily={"Tilt Neon"}  >
+                                    {countValue}
+                               </Typography> 
                 </Typography>
                 <br></br>
-                <Button variant="contained" onClick={handleClick}>
+                <Button variant="contained" onClick={handleClick} sx={{fontFamily:"Tilt Neon"}} >
                     Restart Game
                 </Button>
             </div>
-            
-            <div className={styles.header}>
-                <Typography variant="h3" align='center' >
+            <div className={styles.header}> 
+                <Typography variant="h3" align='center' fontFamily={"Indie Flower"} >
                     How Good Is Your Memory ?
                 </Typography>
             </div>
-
-            
-
         </div>
         </>
-        
     ) 
 }
 

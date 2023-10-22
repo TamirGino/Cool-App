@@ -1,6 +1,5 @@
 .container{
     border: 0px solid black;
-    /* padding-top: 100px; */
     display: flex;
     flex-grow: row nowrap;
     justify-content: flex-start;
@@ -11,3 +10,6 @@
     flex-grow: 1;       
     text-align:center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Cinzel+Decorative:wght@700&family=Dancing+Script:wght@600;700&family=Indie+Flower&family=Italiana&family=Limelight&family=Love+Ya+Like+A+Sister&family=Nothing+You+Could+Do&family=Shadows+Into+Light&family=Short+Stack&family=Tangerine:wght@700&family=Tilt+Neon&display=swap');
